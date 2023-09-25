@@ -38,7 +38,8 @@ body {
 }
 
 #container {
-  width: 560px;
+  width: 100%;
+  max-width: 560px;
   margin: 56px auto 56px;
   padding: 0 24px;
   background-color: var(--bgcolor-container);
@@ -86,16 +87,16 @@ body {
   left: 0;
   z-index: 1;
   transform: translateY(-50%);
+  animation: slide-out 0.2s;
 } 
 
 .dark #switch button {
-  right: 0;
-  left: initial;
+  animation: slide-in 0.4s forwards;
 }
 
 #switch span {
   display: block;
-  width: 64px;
+  width: 57px;
   height: 27px;
   background: var(--bgcolor-btnhover);
   border-radius: 9999px;
@@ -111,7 +112,8 @@ ul {
 }
 
 ul li a {
-  width: 360px;
+  width: 100%;
+  max-width: 360px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -157,4 +159,30 @@ footer {
   padding: 15px 0;
   text-align: center;
   font-size: 12px;
+}
+
+/*media queries*/
+@media (min-width: 700px){
+  #container {
+  }
+
+}
+
+/*animation*/
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-out {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
+  }
 }
