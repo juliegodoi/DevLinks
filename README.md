@@ -18,4 +18,4 @@ Esse projeto foi desenvolvido junto ao <strong>Discover</strong> da <strong>Rock
 
 O DevLinks é um agregador de links para usar como cartão de visitas online.
 
-- [Acesse o projeto finalizado aqui](https://maykbrito.github.io/devlinks)
+- [Acesse o projeto finalizado aqui](https://juliegodoi.github.io/DevLinks/)
